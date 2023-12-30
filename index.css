@@ -1,142 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
-    line-height: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    padding: 30px;
-    margin: 8px auto;
-    min-width: 290px;
-    display: block;
+  background-color: rgb(64, 145, 244);
+  color: white;
+  margin: auto;
+  font-size: 18px;
 }
 
-h1 {
-    font-size: 30px;
+.mayaangelou {
+  height: 80px;
+  text-align: center;
+  margin: 50px auto;
 }
 
-h2 {
-    font-size: 25px;
+.mayaangelou h1 {
+  font-size: 50px;
 }
 
-h3 {
-    font-size: 20px;
+.mayaangelou h1,
+p {
+  padding-bottom: 20px;
+  
 }
 
-h1, h2, h3 {
-    margin: 20px 0;
-    color: #4caf50;
+#img-div {
+  max-width: 650px;
+  width: 100%;
+  height: 450px;
+  background-color: rgb(195, 195, 187);
+  text-align: center;
+  margin: auto;
 }
 
-button {
-    width: 170px;
-    height: 50px;
-    background-color: #04AA6D;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    margin: 20px;
-    font-size: 20px;
-    cursor: pointer;
+#img-div img {
+  width: 90%;
+  max-width: 100%;
+  text-align: center;
+  height: 90%;
+  margin: auto;
+  padding-top: 40px;
+  display: block;
+  object-fit: contain;
 }
 
-button:hover {
-    cursor: pointer;
-    background-color: #a1fbda;
+#img-caption {
+  color: #000000;
+  margin-top: 10px;
+  padding: 0;
 }
 
-.buttonWrapper {
-    display: flex;
-    justify-content: center;
+#main .main {
+  text-align: justify;
+  vertical-align: center;
+  line-height: 30px;
+  width: 500px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+#main h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  vertical-align: center;
+}
+
+#main h3 {
+  color: rgb(3, 23, 52);
+  text-align: center;
+  vertical-align: center;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+ul > li {
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: rgb(3, 23, 52);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#main blockquote {
+  margin: 50px;
+  text-align: center;
+  vertical-align: center;
+  padding: 0;
+}
+
+blockquote > i {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+h3 a {
+  cursor: pointer;
+  color: rgb(243, 243, 237);
+  text-decoration: none;
+}
+
+h3 a:hover {
+  cursor: pointer;
+  color: rgb(3, 23, 52);
+}
+
+.bold {
+  font-weight: bold;
+  color: rgb(3, 23, 52);
+}
+
+@media only screen and (max-width: 480px) {
+  header, main {
+    width: 70%;
+    margin: auto;
+  }
+  
+  ul li, h2 {
+    text-align: center;
+    width: 350px;
+  }
+
+  blockquote {
+    text-align: center;
+    width: 200px;
+  }
+  body {
+    font-size: 14px;
     align-items: center;
-}
+  }
 
-.twoButtonsWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.examples {
-    background-color: #f1f1f1;
-    border-left: 4px solid #4caf50;
-}
-
-table {
-    width: 500px;
-}
-
-th, tr, td {
+  p {
     margin: 20px;
-    text-align: justify;
-}
-tr:nth-child(odd) {
-    background-color: #f1f1f1;
-}
+  }
 
-a {
-    text-decoration: none;
-    color: crimson;
-    cursor: pointer;
-}
+  .mayaangelou h1 {
+  font-size: 24px;
+  }
 
+  #img-div {
+    height: 300px;
+    width: 350px;
+  }
 
-a:hover {
-    color: #4caf50
-}
+  #img-caption {
+    padding: 0;
+    margin: 0;
+  }
 
-ul > .lis {
-    border: 2px solid #000000;
-    border-bottom: none;
-    background-color: #f1f1f1;
-    list-style-type: none;  
-}
-
-.lis > a {
-    text-decoration: none;
-    color: #000000;
-}
-ul:last-child {
-    border-bottom: 2px solid #000000;
-}
-
-
-
-
-@media only screen and (max-width: 815px) {
-    
-
-    * {
-        scroll-behavior: smooth;
-        
-    }
-
-    #navbar {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        max-height: 275px;
-        z-index: 1;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    
-        #navbar {
-            position: fixed;
-            min-width: 290px;
-            top: 0px;
-            left: 0px;
-            width: 300px;
-            height: 100%;
-
-        }
-        
-        nav {
-            display: block;
-        }
+  h3 {
+  font-size: 16px;
+  }
 }
