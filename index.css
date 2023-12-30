@@ -10,6 +10,7 @@ body {
   color: white;
   margin: auto;
   font-size: 18px;
+  text-align: center;
 }
 
 .mayaangelou {
@@ -120,36 +121,48 @@ h3 a:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  header, main {
-    width: 70%;
-    margin: auto;
-  }
+
   
-  ul li, h2 {
-    text-align: center;
+  .ul {
+    
     width: 350px;
+    text-align: center;
+    margin: auto;
+    
   }
 
-  blockquote {
-    text-align: center;
-    width: 200px;
-  }
+  
   body {
     font-size: 14px;
-    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 380px;
   }
 
-  p {
-    margin: 20px;
+  
+
+  h2, h3, p {
+    
+    text-align: center;
   }
 
   .mayaangelou h1 {
   font-size: 24px;
+  text-align: center;
+  margin: auto;
+  margin-left: 50px;
   }
 
   #img-div {
     height: 300px;
     width: 350px;
+    text-align: center;
+    margin: auto;
+    margin-left: 50px;
+  }
+
+  img {
+    text-align: center;
   }
 
   #img-caption {
@@ -159,5 +172,7 @@ h3 a:hover {
 
   h3 {
   font-size: 16px;
+  margin: auto;
+  margin-left: 50px;
   }
 }
