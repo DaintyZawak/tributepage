@@ -26,7 +26,7 @@ body {
 .mayaangelou h1,
 p {
   padding-bottom: 20px;
-  
+  text-align: center;
 }
 
 #img-div {
@@ -57,9 +57,8 @@ p {
 
 #main .main {
   text-align: justify;
-  vertical-align: center;
   line-height: 30px;
-  width: 500px;
+  width: 500px; 
   margin: auto;
   padding: 50px 0;
 }
@@ -67,7 +66,6 @@ p {
 #main h2 {
   margin-bottom: 30px;
   text-align: center;
-  vertical-align: center;
 }
 
 #main h3 {
@@ -123,39 +121,26 @@ h3 a:hover {
 @media only screen and (max-width: 480px) {
 
   
-  .ul {
-    
-    width: 350px;
-    text-align: center;
-    margin: auto;
-    
-  }
+  
 
   
   body {
     font-size: 16px;
-    text-align: center;
-    margin: auto;
-    width: 380px;
+    scroll-behavior: smooth;
   }
 
   
 
-  h2, h3, p {
-    
-    text-align: center;
-  }
+  
 
-  h3, p {
-    margin-left: 100px;
-  }
+  
     
 
   .mayaangelou h1 {
   font-size: 24px;
   text-align: center;
   margin: auto;
-  margin-left: 50px;
+  
   }
 
   #img-div {
@@ -163,21 +148,30 @@ h3 a:hover {
     width: 350px;
     text-align: center;
     margin: auto;
-    margin-left: 100px;
+    
   }
 
-  img {
-    text-align: center;
-  }
-
+  
   #img-caption {
     padding: 0;
     margin: 0;
+    font-size: 12px;
   }
 
   h3 {
   font-size: 20px;
   margin: auto;
-  margin-left: 50px;
+  
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  #main .main {
+    width: 300px;
+    margin: auto;
+    padding: 30px 0;
+    text-align: justify;
   }
 }
